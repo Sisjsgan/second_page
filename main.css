@@ -910,7 +910,12 @@ svg {
     width: 50%;
 }
 
-.right div {
+.right__first {
+    display: flex;
+    flex-direction: column;
+}
+
+.right__second {
     display: flex;
     flex-direction: column;
 }
@@ -974,10 +979,6 @@ svg {
     height: 37%;
 }
 
-.right__third {
-    height: 32%;
-}
-
 .right__second-describe {
     font-family: "Roboto", Arial, sans-serif;
     font-size: 14px;
@@ -989,6 +990,385 @@ svg {
     margin-top: 26px;
     font-weight: bold;
 }
+
+.btn__second {
+    text-transform: uppercase;
+    font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
+    font-size: 150%;
+    padding: 0px 45px;
+    background: #000;
+    color: #ffc92f;
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 6%;
+    margin-right: 65%;
+    padding-top: 1.2%;
+    margin-top: 29%;
+}
+
+.btn__second:hover {
+    background: #d82727;
+    color: #fff;
+} 
+
+.btn__size-1 {
+    border: 3px solid #c1c1c15c;
+    text-decoration: none;
+    color: #c1c1c1;
+    font-size: 12px;
+    padding-left: 9.5px;
+    padding-right: 9.5px;
+}
+
+.btn__size-2 {
+    border: 3px solid #c1c1c15c;
+    text-decoration: none;
+    color: #c1c1c1;
+    font-size: 12px;
+    font-weight: 20px;
+    margin-left: 3.5px;
+    padding-left: 12.5px;
+    padding-right: 12.5px;
+}
+
+.btn__size-3 {
+    border: 3px solid #c1c1c15c;
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    font-weight: 20px;
+    margin-left: 3.5px;
+    padding-left: 15.8px;
+    padding-right: 15.8px;
+}
+
+.btn__size-4 {
+    border: 3px solid #c1c1c15c;
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    font-weight: 20px;
+    margin-left: 3.5px;
+    padding-left: 14.5px;
+    padding-right: 14.5px;
+}
+
+.btn__size-5 {
+    border: 3px solid #c1c1c15c;
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    font-weight: 20px;
+    margin-left: 3.5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.btn__size-6 {
+    border: 3px solid #c1c1c15c;
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    font-weight: 20px;
+    margin-left: 3.5px;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+.btn__size-7 {
+    border: 3px solid #c1c1c15c;
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    font-weight: 20px;
+    margin-left: 3.5px;
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+.btn__size-8 {
+    border: 3px solid #c1c1c15c;
+    text-decoration: none;
+    color: #c1c1c1;
+    font-size: 12px;
+    font-weight: 20px;
+    margin-left: 3.5px;
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+.btn__size {
+    display: flex;
+    margin-left: 6%;
+    padding-top: 1.2%;
+    margin-top: -32%;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.btn__size-3:hover {
+    background: #ffc92f;
+    color: #000;
+}
+
+.btn__size-4:hover {
+    background: #ffc92f;
+    color: #000;
+}
+
+.btn__size-5:hover {
+    background: #ffc92f;
+    color: #000;
+}
+
+.btn__size-6:hover {
+    background: #ffc92f;
+    color: #000;
+}
+
+.btn__size-7:hover {
+    background: #ffc92f;
+    color: #000;
+}
+
+
+.circle,
+.inner {
+    border-radius: 50%;
+      height: 23px;
+    width: 23px;
+    box-sizing: content-box;
+}
+.circle {
+    background-color: #fff;
+    padding: 5px;
+    position: relative;
+    box-shadow: inset -20px 20px 20px rgba(0,0,0,.2), -20px 20px 30px rgba(0,0,0,.3);
+    display: inline-block;
+    margin: 16px auto;
+    margin-left: 29px;
+}
+.circle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    box-shadow: inset -2px 2px 2px #fff;
+    border-radius: 50%;
+}
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset -3px 3px 6px rgba(0, 0, 0, .3);
+    background: #000; /* Фон кнопки */
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif; 
+    transition: all .3s ease-in-out;    
+}
+a:hover .inner {
+    background: #BFE2FF;  /* Фон кнопки при наведении */
+    color: #337AB7;
+}
+
+
+.circle-1,
+.inner-1 {
+    border-radius: 50%;
+      height: 23px;
+    width: 23px;
+    box-sizing: content-box;
+}
+.circle-1 {
+    background-color: #fff;
+    padding: 5px;
+    position: relative;
+    box-shadow: inset -20px 20px 20px rgba(0,0,0,.2), -20px 20px 30px rgba(0,0,0,.3);
+    display: inline-block;
+    margin: 16px auto;
+    margin-left: 8px;
+}
+.circle-1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    box-shadow: inset -2px 2px 2px #fff;
+    border-radius: 50%;
+}
+.inner-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset -3px 3px 6px rgba(0, 0, 0, .3);
+    background: #ffffff; /* Фон кнопки */
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif; 
+    transition: all .3s ease-in-out;    
+}
+a:hover .inner-1 {
+    background: #b7e5ff;  /* Фон кнопки при наведении */
+    color: #e2e7ff;
+}
+
+
+.circle-2,
+.inner-2 {
+    border-radius: 50%;
+      height: 23px;
+    width: 23px;
+    box-sizing: content-box;
+}
+.circle-2 {
+    background-color: #fff;
+    padding: 5px;
+    position: relative;
+    box-shadow: inset -20px 20px 20px rgba(0,0,0,.2), -20px 20px 30px rgba(0,0,0,.3);
+    display: inline-block;
+    margin: 16px auto;
+    margin-left: 8px;
+}
+.circle-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    box-shadow: inset -2px 2px 2px #fff;
+    border-radius: 50%;
+}
+.inner-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset -3px 3px 6px rgba(0, 0, 0, .3);
+    background: #2a7530; /* Фон кнопки */
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif; 
+    transition: all .3s ease-in-out;    
+}
+a:hover .inner-2 {
+    background: #bfffbf;  /* Фон кнопки при наведении */
+    color: #33b745;
+}
+
+
+.circle-3,
+.inner-3 {
+    border-radius: 50%;
+      height: 23px;
+    width: 23px;
+    box-sizing: content-box;
+}
+.circle-3 {
+    background-color: #fff;
+    padding: 5px;
+    position: relative;
+    box-shadow: inset -20px 20px 20px rgba(0,0,0,.2), -20px 20px 30px rgba(0,0,0,.3);
+    display: inline-block;
+    margin: 16px auto;
+    margin-left: 8px;
+}
+.circle-3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    box-shadow: inset -2px 2px 2px #fff;
+    border-radius: 50%;
+}
+.inner-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset -3px 3px 6px rgba(0, 0, 0, .3);
+    background: #1114dd; /* Фон кнопки */
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif; 
+    transition: all .3s ease-in-out;    
+}
+a:hover .inner-3 {
+    background: #9baaff;  /* Фон кнопки при наведении */
+    color: #2131c7;
+}
+
+
+.circle-4,
+.inner-4 {
+    border-radius: 50%;
+      height: 23px;
+    width: 23px;
+    box-sizing: content-box;
+}
+.circle-4 {
+    background-color: #fff;
+    padding: 5px;
+    position: relative;
+    box-shadow: inset -20px 20px 20px rgba(0,0,0,.2), -20px 20px 30px rgba(0,0,0,.3);
+    display: inline-block;
+    margin: 16px auto;
+    margin-left: 8px;
+}
+.circle-4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    box-shadow: inset -2px 2px 2px #fff;
+    border-radius: 50%;
+}
+.inner-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset -3px 3px 6px rgba(0, 0, 0, .3);
+    background: #b73333; /* Фон кнопки */
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif; 
+    transition: all .3s ease-in-out;    
+}
+a:hover .inner-4 {
+    background: #ffbfbf;  /* Фон кнопки при наведении */
+    color: #b73333;
+}
+
+
+
+
 
 
 
