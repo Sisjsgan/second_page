@@ -1,29 +1,38 @@
 (function() {
 
-    const elem = document.querySelector(".js");
-    const iso = new Isotope(elem, {
-        itemSelector: ".products__item",
-        filter: '.popular'
-    });
-
-    const controlls = document.querySelectorAll(".filter__link");
-    const activeClass = "filter__item--active";
+    const img = document.querySelector('.left__img')
+    const list = document.querySelector('.js')
+    const sizeBtns = document.querySelectorAll('.btn__size-link')
+    const activeClass = 'btn__size--active'
     
-    controlls.forEach(function(control) {
+    list.addEventListener('click', function(event) {
+        event.preventDefault()
+        if (event.target.classList.contains('btn__black')) {
+            img.setAttribute('src', './img/tshirts/tshirt_07.png')
+        }
+        if (event.target.classList.contains('btn__white')) {
+            img.setAttribute('src', './img/tshirts/tshirt_08.png')
+        }
+        if (event.target.classList.contains('btn__green')) {
+            img.setAttribute('src', './img/tshirts/tshirt_09.png')
+        }
+        if (event.target.classList.contains('btn__blue')) {
+            img.setAttribute('src', './img/tshirts/tshirt_10.png')
+        }
+        if (event.target.classList.contains('btn__red')) {
+            img.setAttribute('src', './img/tshirts/tshirt_11.png')
+        }
+    }) 
+    sizeBtns.forEach(function(control){
         control.addEventListener("click", function(e) {
-            e.preventDefault();
-
-            const filterName = control.getAttribute("data-filter");
-
-            controlls.forEach(function(link) {
-                link.closest(".filter__item").classList.remove(activeClass);
-            });
-
-            control.closest(".filter__item").classList.add(activeClass);
-
-            iso.arrange({
-                filter: `.${filterName}`
-            })
-        });  
-    });
+            e.preventDefault()
+            if(e.target.classList.contains('btn__size--hover')){
+                sizeBtns.forEach(function(control){
+                    control.classList.remove(activeClass)
+                })
+                control.classList.add(activeClass)
+            }
+           
+        })
+    }) 
 })();

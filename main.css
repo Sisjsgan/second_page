@@ -37,6 +37,10 @@ body {
     background: #fcf5e6;
 }
 
+a {
+    text-decoration: none;
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -963,7 +967,7 @@ svg {
     right: 13px;
 }
 
-.img {
+.left__img {
     display: block;
     max-width: 88%;
     max-height: 96%;
@@ -1106,27 +1110,8 @@ svg {
     font-weight: bold;
 }
 
-.btn__size-3:hover {
-    background: #ffc92f;
-    color: #000;
-}
-
-.btn__size-4:hover {
-    background: #ffc92f;
-    color: #000;
-}
-
-.btn__size-5:hover {
-    background: #ffc92f;
-    color: #000;
-}
-
-.btn__size-6:hover {
-    background: #ffc92f;
-    color: #000;
-}
-
-.btn__size-7:hover {
+.btn__size--hover:hover,
+.btn__size--active{
     background: #ffc92f;
     color: #000;
 }
@@ -1173,10 +1158,6 @@ svg {
     font-family: 'Roboto', sans-serif; 
     transition: all .3s ease-in-out;    
 }
-a:hover .inner {
-    background: #BFE2FF;  /* Фон кнопки при наведении */
-    color: #337AB7;
-}
 
 
 .circle-1,
@@ -1220,7 +1201,7 @@ a:hover .inner {
     font-family: 'Roboto', sans-serif; 
     transition: all .3s ease-in-out;    
 }
-a:hover .inner-1 {
+.circle-btn:hover .circle__inner  {
     background: #b7e5ff;  /* Фон кнопки при наведении */
     color: #e2e7ff;
 }
@@ -1267,10 +1248,6 @@ a:hover .inner-1 {
     font-family: 'Roboto', sans-serif; 
     transition: all .3s ease-in-out;    
 }
-a:hover .inner-2 {
-    background: #bfffbf;  /* Фон кнопки при наведении */
-    color: #33b745;
-}
 
 
 .circle-3,
@@ -1314,11 +1291,6 @@ a:hover .inner-2 {
     font-family: 'Roboto', sans-serif; 
     transition: all .3s ease-in-out;    
 }
-a:hover .inner-3 {
-    background: #9baaff;  /* Фон кнопки при наведении */
-    color: #2131c7;
-}
-
 
 .circle-4,
 .inner-4 {
@@ -1361,20 +1333,9 @@ a:hover .inner-3 {
     font-family: 'Roboto', sans-serif; 
     transition: all .3s ease-in-out;    
 }
-a:hover .inner-4 {
-    background: #ffbfbf;  /* Фон кнопки при наведении */
-    color: #b73333;
-}
 
 
 
 
 
 
-
-font-weight: bold;
-color: #232323;
-font-size: 15px;
-text-decoration: none;
-
-position: relative;
